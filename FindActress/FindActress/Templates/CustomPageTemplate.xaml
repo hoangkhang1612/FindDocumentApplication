@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FindActress.Templates.CustomPageTemplate"
+             VerticalOptions="FillAndExpand"
+             HorizontalOptions="FillAndExpand"
+             RowSpacing="0"
+             ColumnSpacing="0">
+    <Grid.RowDefinitions>
+        <RowDefinition
+            Height="55" />
+        <RowDefinition
+            Height="1" />
+        <RowDefinition
+            Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition
+            Width="90" />
+        <ColumnDefinition
+            Width="*" />
+        <ColumnDefinition
+            Width="90" />
+    </Grid.ColumnDefinitions>
+    <!-- Back Button -->
+    <StackLayout
+        Grid.Column="0"
+        Grid.Row="0"
+        Grid.ColumnSpan="1"
+        Margin="0"
+        Padding="0,4,0,4"
+        VerticalOptions="Fill"
+        HorizontalOptions="Fill"
+        Orientation="Horizontal"
+        Spacing="0"
+        IsVisible="{TemplateBinding IsBackButtonEnabled}">
+        <Image
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+            Source="ic_nav_back.png"
+            Aspect="AspectFit"
+            IsVisible="{TemplateBinding IsCenterBackVisible}" />
+        <Image
+            Margin="10,0,2,0"
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
+            Source="ic_nav_back.png"
+            Aspect="AspectFit"
+            IsVisible="{TemplateBinding IsLeftBackVisible}" />
+        <Label
+            Margin="0"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            FontSize="18"
+            Text="{TemplateBinding PageBackTitle}"
+            IsVisible="{TemplateBinding IsBackTitleVisible}" />
+        <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer
+                Command="{TemplateBinding BackButtonTappedCommand}" />
+        </StackLayout.GestureRecognizers>
+    </StackLayout>
+    <!-- Page Title -->
+    <AbsoluteLayout
+        Grid.Column="1"
+        Grid.Row="0"
+        Grid.ColumnSpan="1"
+        Margin="0"
+        Padding="0"
+        VerticalOptions="Fill"
+        HorizontalOptions="Fill"
+        IsVisible="{TemplateBinding IsTitleVisible}">
+        <Label
+            AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Margin="0"
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            TextColor="{StaticResource TextColor}"
+            FontSize="{StaticResource FontSizeExtraLarge}"
+            FontFamily="{StaticResource FontFamilyMedium}"
+            Text="{TemplateBinding PageTitle}" />
+    </AbsoluteLayout>
+    <BoxView
+        Grid.Column="0"
+        Grid.Row="1"
+        Grid.ColumnSpan="3"
+        IsVisible="{TemplateBinding IsTitleVisible}"
+        BackgroundColor="#D8D8D8" />
+    <ContentPresenter
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand"
+        Grid.Column="0"
+        Grid.Row="2"
+        Grid.ColumnSpan="3" />
+</Grid>

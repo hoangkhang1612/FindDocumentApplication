@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FindActress.ResourceDictionaries.ColorResourceDictionary">
+
+    <!--  Colors  -->
+
+    <Color x:Key="PrimaryColor">White</Color>
+    <Color x:Key="TextColor">#2D2D2D</Color>
+    <Color x:Key="Text2Color">#8E8E93</Color>
+    <Color x:Key="Text3Color">#919191</Color>
+    <Color x:Key="LinkColor">#0F99C8</Color>
+    <Color x:Key="LineColor">#D8D8D8</Color>
+    <Color x:Key="AccentColor">#ED263D</Color>
+    <Color x:Key="SeparateLineColor">#194D4D4D</Color>
+
+</ResourceDictionary>

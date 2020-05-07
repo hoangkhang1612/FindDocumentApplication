@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<controls:CustomContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:FindActress.Controls;assembly=FindActress"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:behaviors="clr-namespace:FindActress.Behaviors;assembly=FindActress"
+    ios:Page.UseSafeArea="true"
+    ControlTemplate="{StaticResource PageHeaderControlTemplate}"
+    mc:Ignorable="d"
+    x:Class="FindActress.Views.FindActressPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout Spacing="5" Margin="20,5" Orientation="Vertical">
+            <controls:BorderEntry
+                IsCurvedCornersEnabled="True"
+                Keyboard="Email"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                ReturnType="Go"
+                HeightRequest="45"
+                Placeholder="Enter actress name"
+                BackgroundColor="{StaticResource PrimaryColor}"
+                TextChangedCommand="{Binding EmailTextChangedCommand}"
+                Text="{Binding ActressName}" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="1"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <Button
+                    Margin="5,0"
+                    HeightRequest="20"
+                    Command="{Binding FindActressCommand}"
+                    Style="{StaticResource ButtonSearchStyle}"
+                    Text="FIND" />
+                <BoxView
+                    Grid.Column="1"
+                    WidthRequest="1"
+                    BackgroundColor="{StaticResource LineColor}"
+                    HorizontalOptions="FillAndExpand" />
+                <Button
+                    Grid.Column="2"
+                    Margin="5,0"
+                    HeightRequest="20"
+                    Command="{Binding ClearCommand}"
+                    Style="{StaticResource ButtonResetStyle}"
+                    Text="CLEAR" />
+            </Grid>
+            <BoxView
+                HeightRequest="1"
+                BackgroundColor="{StaticResource LineColor}"
+                HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+        <StackLayout 
+            Grid.Row="1"
+            BackgroundColor="{StaticResource PrimaryColor}"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <!-- Empty List -->
+            <Label
+                IsVisible="{Binding IsActressEmpty}"
+                Margin="35,0,35,10"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Style="{StaticResource DemiBoldValueLabelStyle}"
+                Text="Your Actress List Is Empty." />
+            <!-- List Actress -->
+            <ListView
+                IsVisible="{Binding IsActressEmpty, Converter={StaticResource inverseBooleanConv}}"
+                ItemsSource="{Binding ActressNameList}"
+                BackgroundColor="{StaticResource PrimaryColor}"
+                Margin="0,10,0,0"
+                SeparatorVisibility="None"
+                SeparatorColor="White"
+                HasUnevenRows="True"
+                SelectionMode="None"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                VerticalScrollBarVisibility="Never"
+                CachingStrategy="RecycleElement"
+                ios:ListView.SeparatorStyle="FullWidth"
+                IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout
+                                Margin="0"
+                                BackgroundColor="{StaticResource PrimaryColor}"
+                                VerticalOptions="FillAndExpand"
+                                HorizontalOptions="FillAndExpand"
+                                Spacing="0">
+                                <Grid Margin="25,0,30,0" RowSpacing="0" ColumnSpacing="0" VerticalOptions="Start"
+                                      HorizontalOptions="FillAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="37*" />
+                                        <ColumnDefinition Width="37*" />
+                                        <ColumnDefinition Width="10*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackLayout Grid.RowSpan="2" Spacing="0">
+                                        <Image HeightRequest="100"
+                                               WidthRequest="80"
+                                               Source="{Binding ImageUrl}"/>
+                                    </StackLayout>
+                                    <StackLayout Spacing="0" Grid.Column="1" Grid.Row="0">
+                                        <Label Text="Name" Style="{StaticResource DetailLabelStyle}" />
+                                        <Label Text="{Binding Name}" 
+                                               Style="{StaticResource DemiBoldValueLabelStyle}" />
+                                    </StackLayout>
+                                    <StackLayout Spacing="0" Grid.Column="1" Grid.Row="1">
+                                        <Label Text="Japan Name" Style="{StaticResource DetailLabelStyle}"/>
+                                        <Label Text="{Binding JapanName}" 
+                                               Style="{StaticResource DemiBoldValueLabelStyle}" />
+                                    </StackLayout>
+                                </Grid>
+                                <BoxView
+                                    Margin="15,10,30,10"
+                                    HeightRequest="1"
+                                    VerticalOptions="End"
+                                    HorizontalOptions="FillAndExpand"
+                                    BackgroundColor="{StaticResource LineColor}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.Behaviors>
+                    <behaviors:EventToCommandBehavior
+                        Command="{Binding ActressDetailCommand}"
+                        Converter="{StaticResource ItemTappedConverter}"
+                        EventName="ItemTapped" />
+                </ListView.Behaviors>
+            </ListView>
+        </StackLayout>
+    </Grid>
+</controls:CustomContentPage>

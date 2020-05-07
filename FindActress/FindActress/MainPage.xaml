@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<controls:CustomContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:FindActress.Controls;assembly=FindActress"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    mc:Ignorable="d"
+    ios:Page.UseSafeArea="true"
+    ControlTemplate="{StaticResource PageHeaderControlTemplate}"
+    Title=""
+    x:Class="FindActress.MainPage">
+
+    <!--<AbsoluteLayout
+        VerticalOptions="Fill"
+        HorizontalOptions="Fill"
+        BackgroundColor="Transparent">-->
+        <StackLayout
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <ScrollView
+                BackgroundColor="Transparent"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <StackLayout
+                    Margin="0"
+                    Spacing="0">
+                    <Label Text="Find Japan Actress Application"
+                           FontSize="20"/>
+                    <StackLayout
+                        Margin="35,0,35,0"
+                        Padding="0"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="Fill"
+                        Spacing="0">
+                        <Label
+                            Margin="0,0,0,5"
+                            Text="Actress Name" />
+                        <controls:BorderEntry
+                            IsCurvedCornersEnabled="True"
+                            Keyboard="Email"
+                            VerticalOptions="Center"
+                            HorizontalOptions="FillAndExpand"
+                            ReturnType="Next"
+                            Placeholder="Enter actress name"
+                            HeightRequest="45"
+                            BackgroundColor="Transparent"
+                            FontSize="14"
+                            TextChangedCommand="{Binding EmailTextChangedCommand}"
+                            Text="{Binding ActressName}" />
+                    </StackLayout>
+                    <Button
+                        VerticalOptions="End"
+                        Margin="35,30"
+                        Command="{Binding FindActressCommand}"
+                        CornerRadius="4"
+                        BackgroundColor="Brown"
+                        TextColor="White"
+                        Text="FIND ACTRESS" />
+                    <Button
+                        VerticalOptions="End"
+                        Margin="35,30"
+                        Command="{Binding FindMovieCommand}"
+                        CornerRadius="4"
+                        BackgroundColor="Brown"
+                        TextColor="White"
+                        Text="FIND MOVIES" />
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    <!--</AbsoluteLayout>-->
+
+</controls:CustomContentPage>

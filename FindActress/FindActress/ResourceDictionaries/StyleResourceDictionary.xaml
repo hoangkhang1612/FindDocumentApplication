@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:locals="clr-namespace:FindActress.Controls;assembly=FindActress"
+    x:Class="FindActress.ResourceDictionaries.StyleResourceDictionary">
+
+    <ResourceDictionary Source="ColorResourceDictionary.xaml" />
+    <ResourceDictionary Source="SizeResourceDictionary.xaml" />
+    <ResourceDictionary Source="StringResourceDictionary.xaml" />
+
+    <!--  Label Styles  -->
+    <Style x:Key="DefaultLabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeMedium}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyMedium}" />
+    </Style>
+    <Style x:Key="DemiBoldMediumLabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeMedium2}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyDemiBold}" />
+    </Style>
+    <Style x:Key="DefaultEntryLabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyDemiBold}" />
+    </Style>
+    <Style x:Key="DemiBoldValueLabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeMedium}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyDemiBold}" />
+    </Style>
+    <Style x:Key="TitleCollapseStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeExtraLarge}"/>
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyBold}"/>
+    </Style>
+    <Style x:Key="DetailLabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Text3Color}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeAverageSmall}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyRegular}" />
+    </Style>
+    <Style x:Key="BadgesLabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeAverageSmall}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyMedium}" />
+    </Style>
+
+    <!--  Entry/TextBox Styles  -->
+    <Style x:Key="DefaultLoginEntryStyle" TargetType="locals:BorderEntry">
+        <Setter Property="HeightRequest" Value="45" />
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="PlaceholderColor" Value="Default" />
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeMedium2}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyMedium}" />
+    </Style>
+
+    <!--  Buttons  -->
+    <Style x:Key="ButtonSearchStyle" TargetType="Button">
+        <Setter Property="BorderWidth" Value="0" />
+        <Setter Property="BorderColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="CornerRadius" Value="4" />
+        <Setter Property="BackgroundColor" Value="{StaticResource AccentColor}" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeExtraLarge}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyBold}" />
+    </Style>
+    <Style x:Key="ButtonResetStyle" TargetType="Button">
+        <Setter Property="BorderWidth" Value="0" />
+        <Setter Property="BorderColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="CornerRadius" Value="4" />
+        <Setter Property="BackgroundColor" Value="{StaticResource LineColor}" />
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeExtraLarge}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyBold}" />
+    </Style>
+    <Style x:Key="DefaultImageButtonStyle" TargetType="ImageButton">
+        <Setter Property="Aspect" Value="AspectFit" />
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+    </Style>
+    <Style x:Key="DefaultButtonStyle" TargetType="Button">
+        <Setter Property="BorderWidth" Value="0" />
+        <Setter Property="BorderColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="CornerRadius" Value="4" />
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSizeMedium}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontFamilyDemiBold}" />
+    </Style>
+</ResourceDictionary>

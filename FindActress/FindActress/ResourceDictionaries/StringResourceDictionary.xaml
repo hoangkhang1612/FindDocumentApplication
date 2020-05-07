@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Class="FindActress.ResourceDictionaries.StringResourceDictionary">
+
+    <OnPlatform x:Key="FontFamilyDemiBold" x:TypeArguments="x:String">
+        <On Platform="Android" Value="fonts/AvenirNext-DemiBold.ttf#Avenir Next Demi Bold" />
+        <On Platform="iOS" Value="AvenirNext-DemiBold" />
+    </OnPlatform>
+    <OnPlatform x:Key="FontFamilyMedium" x:TypeArguments="x:String">
+        <On Platform="Android" Value="fonts/AvenirNext-Medium.ttf#Avenir Next Medium" />
+        <On Platform="iOS" Value="AvenirNext-Medium" />
+    </OnPlatform>
+    <OnPlatform x:Key="FontFamilyBold" x:TypeArguments="x:String">
+        <On Platform="Android" Value="fonts/AvenirNext-Bold.ttf#Avenir Next" />
+        <On Platform="iOS" Value="AvenirNext-Bold" />
+    </OnPlatform>
+    <OnPlatform x:Key="FontFamilyRegular" x:TypeArguments="x:String">
+        <On Platform="Android" Value="fonts/AvenirNext-Regular.ttf#Avenir Next" />
+        <On Platform="iOS" Value="AvenirNext-Regular" />
+    </OnPlatform>
+    <OnPlatform x:Key="FontFamilyDemiBoldItalic" x:TypeArguments="x:String">
+        <On Platform="Android" Value="fonts/AvenirNext-DemiBoldItalic.ttf#Avenir Next Demi Bold" />
+        <On Platform="iOS" Value="AvenirNext-DemiBoldItalic" />
+    </OnPlatform>
+</ResourceDictionary>
