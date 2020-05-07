@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UcCcFWxkphk7iUogPwYKrN2JYW3B1OSHgJMXtuFNvItilMgFt0zMhw5E0+51a6tH5Cp5gLUL4AImrKkiA2rpfA==",
+  "dgSpecHash": "5JOdbY32Ql0fMR86MTQiud153lBTlUumHygw4v/XE+EJy6pzO+u/5hhiGslWNBtFNvnx8iKcIEMG+ysGgVf/sA==",
   "success": true,
-  "projectFilePath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.Android\\FindActress.Android.csproj",
+  "projectFilePath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.Android\\FindActress.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khang.nguyen\\.nuget\\packages\\acr.userdialogs\\7.1.0.442\\acr.userdialogs.7.1.0.442.nupkg.sha512",
     "C:\\Users\\khang.nguyen\\.nuget\\packages\\andhud\\1.4.2\\andhud.1.4.2.nupkg.sha512",

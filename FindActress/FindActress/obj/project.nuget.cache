@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O/L79XWgVfUAYE9wvOZvA886nwPRy4RwEuww8HE6YmQwwzse2cQKEEz0cTm3X1nM1q8Iu2uzhkvSKe0YE0NhcA==",
+  "dgSpecHash": "7CXnDFpAHk3LxNZDp0C+V/Lx+IKDhf2n3pU+5iIc13lO4UPXq0oCRmmpg3oaufPV1rGvPsnaeIWqnUYjnYekkQ==",
   "success": true,
-  "projectFilePath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\FindActress.csproj",
+  "projectFilePath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\FindActress.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khang.nguyen\\.nuget\\packages\\acr.userdialogs\\7.1.0.442\\acr.userdialogs.7.1.0.442.nupkg.sha512",
     "C:\\Users\\khang.nguyen\\.nuget\\packages\\dotmorten.xamarin.forms.autosuggestbox\\1.1.1\\dotmorten.xamarin.forms.autosuggestbox.1.1.1.nupkg.sha512",

@@ -2269,11 +2269,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.Android\\FindActress.Android.csproj",
+      "projectUniqueName": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.Android\\FindActress.Android.csproj",
       "projectName": "FindActress.Android",
-      "projectPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.Android\\FindActress.Android.csproj",
+      "projectPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.Android\\FindActress.Android.csproj",
       "packagesPath": "C:\\Users\\khang.nguyen\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.Android\\obj\\",
+      "outputPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2294,8 +2294,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\FindActress.csproj": {
-              "projectPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\FindActress.csproj"
+            "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\FindActress.csproj": {
+              "projectPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\FindActress.csproj"
             }
           }
         }

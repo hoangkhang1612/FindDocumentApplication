@@ -1,4 +1,5 @@
-﻿using FindActress.Controls;
+﻿using System.Globalization;
+using FindActress.Controls;
 using FindActress.Services;
 using FindActress.ViewModels;
 using Xamarin.Forms.Xaml;
@@ -12,6 +13,9 @@ namespace FindActress.Views
         public FindMoviesPage(string actressId)
         {
             InitializeComponent();
+
+            CultureInfo myCurrency = new CultureInfo("en-US");
+            CultureInfo.DefaultThreadCurrentCulture = myCurrency;
 
             IsBackButtonEnabled = true;
             PageTitle = "Find movies";

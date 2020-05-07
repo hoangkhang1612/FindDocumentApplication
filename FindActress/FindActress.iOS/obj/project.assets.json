@@ -1600,11 +1600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.iOS\\FindActress.iOS.csproj",
+      "projectUniqueName": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.iOS\\FindActress.iOS.csproj",
       "projectName": "FindActress.iOS",
-      "projectPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.iOS\\FindActress.iOS.csproj",
+      "projectPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.iOS\\FindActress.iOS.csproj",
       "packagesPath": "C:\\Users\\khang.nguyen\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.iOS\\obj\\",
+      "outputPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1625,8 +1625,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\FindActress.csproj": {
-              "projectPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\FindActress.csproj"
+            "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\FindActress.csproj": {
+              "projectPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\FindActress.csproj"
             }
           }
         }

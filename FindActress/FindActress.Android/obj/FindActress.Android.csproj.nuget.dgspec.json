@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.Android\\FindActress.Android.csproj": {}
+    "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.Android\\FindActress.Android.csproj": {}
   },
   "projects": {
-    "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.Android\\FindActress.Android.csproj": {
+    "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.Android\\FindActress.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.Android\\FindActress.Android.csproj",
+        "projectUniqueName": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.Android\\FindActress.Android.csproj",
         "projectName": "FindActress.Android",
-        "projectPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.Android\\FindActress.Android.csproj",
+        "projectPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.Android\\FindActress.Android.csproj",
         "packagesPath": "C:\\Users\\khang.nguyen\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress.Android\\obj\\",
+        "outputPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\FindActress.csproj": {
-                "projectPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\FindActress.csproj"
+              "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\FindActress.csproj": {
+                "projectPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\FindActress.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\FindActress.csproj": {
+    "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\FindActress.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\FindActress.csproj",
+        "projectUniqueName": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\FindActress.csproj",
         "projectName": "FindActress",
-        "projectPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\FindActress.csproj",
+        "projectPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\FindActress.csproj",
         "packagesPath": "C:\\Users\\khang.nguyen\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\FindActress\\FindActress\\FindActress\\FindActress\\obj\\",
+        "outputPath": "D:\\Project\\FinDocument\\FindDocumentApplication\\FindActress\\FindActress\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
